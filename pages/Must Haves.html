@@ -1,17 +1,14 @@
 <!DOCTYPE html>
-
-
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>prifts</title>
-  <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Shop By Price - Prifts</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/must-haves.css" />
 </head>
 <body>
-
-
-  <header>
+    <header>
     <div class="logo-title">
       <img src="https://via.placeholder.com/40x40?text=L" alt="Logo" class="logo-img">
       <h1 class="site-title">prifts</h1>
@@ -83,36 +80,49 @@
       </ul>
     </nav>
   </header>
+    <section class="shop-by-price">
+        <h1>Must Haves</h1>
+        
+        <div class="price-categories">
+            <div class="price-card">
+                <a href="under-3500.html" class="price-link">
+                    <div class="image-container">
+                        <img src="../images/wallet-category.jpg" alt="Small essentials category">
+                    </div>
+                    <div class="price-info">
+                        <h2>Under Rs 3500/-</h2>
+                        <p>Small essentials, wallets & organisers</p>
+                    </div>
+                </a>
+            </div>
 
-  <main>
-    <section class="filters">
-      <label for="categoryFilter">Filter by Category:</label>
-      <select id="categoryFilter">
-        <option value="all">All</option>
-        <option value="personal">Personal Accessories</option>
-        <option value="bags">Bags & Carriers</option>
-        <option value="clothing">Clothing & Wearables</option>
-        <option value="office">Office & Desk Accessories</option>
-        <option value="home">Home & Utility Items</option>
-        <option value="gift">Specialty & Gift Items</option>
-      </select>
+            <div class="price-card">
+                <a href="under-7500.html" class="price-link">
+                    <div class="image-container">
+                        <img src="../images/backpack-category.jpg" alt="Backpacks category">
+                    </div>
+                    <div class="price-info">
+                        <h2>Under Rs 7500/-</h2>
+                        <p>Backpacks, Messengers bags and more.</p>
+                    </div>
+                </a>
+            </div>
 
+            <div class="price-card">
+                <a href="under-15000.html" class="price-link">
+                    <div class="image-container">
+                        <img src="../images/laptop-bag-category.jpg" alt="Laptop bags category">
+                    </div>
+                    <div class="price-info">
+                        <h2>Under Rs 15000/-</h2>
+                        <p>All leather laptop bags & Totes</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
 
-  <label for="sortBy">Sort by:</label>
-  <select id="sortBy">
-    <option value="name">Name</option>
-    <option value="priceLow">Price: Low to High</option>
-    <option value="priceHigh">Price: High to Low</option>
-  </select>
-</section>
-
-
-
-
-
-
-  </main>
-
+    
 <!-- FOOTER SECTION -->
 <footer style="background:#f9f9fb; margin-top:3rem;">
 
