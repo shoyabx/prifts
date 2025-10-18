@@ -1,36 +1,18 @@
 <!DOCTYPE html>
-<!doctype html>
+
+
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Prifts</title>
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="css/site-header.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>prifts</title>
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
 
-  <header class="header">
-    <div class="logo-title">
-      <img class="logo-img" src="images/Prifts-Logo.png" alt="Prifts">
-      <h1 class="site-title">prifts</h1>
-    </div>
-    <nav>
-      <ul>
-        <li><a href="pages/Accessories.html">Accessories</a></li>
-        <li><a href="pages/Bags.html">Bags</a></li>
-        <li><a href="pages/Must Haves.html">Must Haves</a></li>
-        <li><a href="#" class="know-us-btn">Know Us</a></li>
-      </ul>
-    </nav>
-    <div class="search-cart">
-      <div>
-        <input class="search-input" placeholder="Search products..." />
-        <span class="search-icon">🔍</span>
-      </div>
-      <div class="cart">🛒 Cart</div>
-    </div>
-  </header>
+
+  <div id="header"></div>
+  <script src="js/load-header.js"></script>
 
   <main>
     <section class="filters">
@@ -54,10 +36,79 @@
   </select>
 </section>
 
-
   </main>
 
-  <script src="js/site.js"></script>
+<!-- FOOTER SECTION -->
+<footer style="background:#f9f9fb; margin-top:3rem;">
+
+  <!-- Top Icons Row -->
+  <div style="display:flex; justify-content:space-around; padding:2rem 1rem; background:linear-gradient(90deg,#f3f6ff,#f9fafb);">
+    <div style="text-align:center; max-width:200px;">
+      <div style="font-size:2rem;">🛡️</div>
+      <h3>Secure Shopping</h3>
+      <p>Your data is protected with industry-leading encryption.</p>
+    </div>
+    <div style="text-align:center; max-width:200px;">
+      <div style="font-size:2rem;">🚚</div>
+      <h3>Free Shipping</h3>
+      <p>Enjoy free shipping on all orders over ₹150</p>
+    </div>
+    <div style="text-align:center; max-width:200px;">
+      <div style="font-size:2rem;">⭐</div>
+      <h3>Top Quality</h3>
+      <p>We use only the finest genuine leather for our products.</p>
+    </div>
+  </div>
+
+  <!-- Lower Footer Links -->
+  <div style="display:flex; justify-content:space-around; flex-wrap:wrap; padding:2rem 1rem; background:#f9f9fb;">
+
+    <!-- Brand Info -->
+    <div style="flex:1; min-width:200px; margin:1rem;">
+      <h2>PRIFTS</h2>
+      <p>Elegance Within Reach. High-quality, handcrafted leather goods.</p>
+      <div style="margin-top:1rem;">
+        <a href="#"><span style="font-size:1.2rem;">📘</span></a>
+        <a href="#"><span style="font-size:1.2rem; margin:0 0.5rem;">📸</span></a>
+        <a href="#"><span style="font-size:1.2rem;">🐦</span></a>
+      </div>
+    </div>
+
+    <!-- Shop Links -->
+    <div style="flex:1; min-width:200px; margin:1rem;">
+      <h3>Shop</h3>
+      <ul style="list-style:none; padding:0; margin:0;">
+        <li><a href="#">All Products</a></li>
+        <li><a href="#bags">Bags</a></li>
+        <li><a href="#personal">Accessories</a></li>
+        <li><a href="#clothing">Clothing</a></li>
+      </ul>
+    </div>
+
+    <!-- Customer Service -->
+    <div style="flex:1; min-width:200px; margin:1rem;">
+      <h3>Customer Service</h3>
+      <ul style="list-style:none; padding:0; margin:0;">
+        <li><a href="pages/knowus.html">About Us</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Shipping Information</a></li>
+        <li><a href="#">Return Policy</a></li>
+      </ul>
+    </div>
+
+    <!-- Newsletter -->
+    <div style="flex:1; min-width:200px; margin:1rem;">
+      <h3>Join Our Newsletter</h3>
+      <p>Get updates on new arrivals and special offers.</p>
+      <form>
+        <input type="email" placeholder="Enter your email" style="padding:0.5rem; width:70%; border:1px solid #ccc; border-radius:4px;">
+        <button type="submit" style="padding:0.5rem 1rem; background:#007bff; color:#fff; border:none; border-radius:4px;">Subscribe</button>
+      </form>
+    </div>
+
+  </div>
+</footer>
 
 </body>
 </html>
