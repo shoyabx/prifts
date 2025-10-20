@@ -1,4 +1,4 @@
-/* Shared header styles for prifts */
+/* Shared header styles for vellum */
 :root{--primary:#2c3e50;--accent:#3498db;--muted:#666}
 .header {
   display:flex;
