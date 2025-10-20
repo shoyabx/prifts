@@ -1,0 +1,18 @@
+/* Footer component styles */
+.site-footer{background:#f9f9fb;padding:2rem 1rem;margin-top:3rem;color:#222}
+.footer-top{display:flex;justify-content:space-around;gap:1rem;padding:1.5rem;background:linear-gradient(90deg,#f3f6ff,#f9fafb);border-radius:6px}
+.ft-item{text-align:center;max-width:220px}
+.ft-icon{font-size:1.8rem;margin-bottom:0.5rem}
+.footer-links{display:flex;justify-content:space-around;gap:2rem;padding:2rem 1rem;flex-wrap:wrap}
+.footer-links .col{flex:1;min-width:200px}
+.footer-links h3{margin-top:0}
+.footer-links ul{list-style:none;padding:0;margin:0}
+.footer-links a{color:#333;text-decoration:none}
+.newsletter-form{display:flex;gap:0.5rem}
+.newsletter-form input{flex:1;padding:0.5rem;border:1px solid #ccc;border-radius:4px}
+.newsletter-form button{padding:0.5rem 1rem;background:#007bff;color:#fff;border:none;border-radius:4px}
+
+@media(max-width:800px){
+  .footer-top{flex-direction:column;align-items:center}
+  .footer-links{flex-direction:column}
+}
