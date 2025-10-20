@@ -15,28 +15,36 @@
   <script src="js/load-header.js"></script>
 
   <main>
-    <section class="filters">
-      <label for="categoryFilter">Filter by Category:</label>
+    <section id="trending-section">
+      <h2>Trending</h2>
+      <div id="trending-products" class="product-list"></div>
+    </section>
+
+    <section id="catalogue-controls">
+      <label for="categoryFilter">Category:</label>
       <select id="categoryFilter">
         <option value="all">All</option>
-        <option value="personal">Personal Accessories</option>
-        <option value="bags">Bags & Carriers</option>
-        <option value="clothing">Clothing & Wearables</option>
-        <option value="office">Office & Desk Accessories</option>
-        <option value="home">Home & Utility Items</option>
-        <option value="gift">Specialty & Gift Items</option>
+        <option value="Bags">Bags</option>
+        <option value="Accessories">Accessories</option>
+        <option value="Clothing">Clothing</option>
+        <option value="Office">Office</option>
+        <option value="Gift">Gift</option>
       </select>
+      <label for="sortBy">Sort by:</label>
+      <select id="sortBy">
+        <option value="name">Name</option>
+        <option value="priceLow">Price: Low to High</option>
+        <option value="priceHigh">Price: High to Low</option>
+      </select>
+    </section>
 
-
-  <label for="sortBy">Sort by:</label>
-  <select id="sortBy">
-    <option value="name">Name</option>
-    <option value="priceLow">Price: Low to High</option>
-    <option value="priceHigh">Price: High to Low</option>
-  </select>
-</section>
-
+    <section id="catalogue-section">
+      <h2>Product Catalogue</h2>
+      <div id="catalogue-products" class="product-list"></div>
+    </section>
   </main>
+  <link rel="stylesheet" href="css/products.css" />
+  <script src="js/products.js"></script>
 
 <!-- Footer -->
 <footer style="background:#f9f9fb; margin-top:3rem;">
