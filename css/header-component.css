@@ -1,7 +1,14 @@
 /* Styles for the reusable header component */
 .header{display:flex;align-items:center;gap:1rem;padding:1rem 2rem;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,0.04);}
 .logo-title{display:flex;align-items:center;gap:0.75rem;margin-right:auto}
-.logo-img{width:44px;height:44px;border-radius:6px;object-fit:cover}
+.logo-img{
+  max-height:48px; /* match header visual height */
+  height:auto; /* preserve original aspect ratio */
+  width:auto; /* allow natural width */
+  border-radius:4px; /* subtle rounding if image already has transparent background */
+  background:transparent; /* avoid boxed background */
+  object-fit:contain;
+}
 .site-title{font-size:1.25rem;font-weight:700;color:#1a1a1a;margin:0}
 nav ul{display:flex;gap:1rem;list-style:none;margin:0;padding:0}
 nav a{color:#333;text-decoration:none;padding:0.35rem 0.5rem;border-radius:6px}
