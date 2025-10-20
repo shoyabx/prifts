@@ -1,4 +1,4 @@
-/* Shared header styles for vellum */
+/* Shared header styles for prifts */
 :root{--primary:#2c3e50;--accent:#3498db;--muted:#666}
 .header {
   display:flex;
@@ -21,4 +21,13 @@
 @media(max-width:800px){
   .search-input{min-width:120px}
   .header{padding:0.75rem 1rem}
+}
+
+/* Utility: hide text visually but keep it available to screen readers */
+.visually-hidden{
+  position:absolute!important;
+  height:1px;width:1px;
+  overflow:hidden;
+  clip:rect(1px,1px,1px,1px);
+  white-space:nowrap;border:0;padding:0;margin:-1px;
 }
