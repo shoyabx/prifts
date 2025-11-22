@@ -105,10 +105,7 @@ nav ul li {
   white-space: nowrap;
 }
 
-/* Show dropdown on hover */
-nav ul li:hover > .submenu {
-  display: block;
-}
+
 
 /* Nested dropdowns (right-aligned) */
 .submenu .submenu {
@@ -207,8 +204,7 @@ nav ul li:hover > .submenu {
     left: 100%;
     transform: none;
   }
-  z-index: 1000000;
-}
+
 
 /* Logo and Title styles moved from HTML */
 .logo-title {
@@ -352,13 +348,7 @@ nav ul .submenu {
   z-index: 1000000;
   box-shadow: 0 8px 24px rgba(0,0,0,0.15);
 }
-  z-index: 9999;
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.17);
-  border-radius: 8px;
-}
-nav ul li:hover > .submenu {
-  display: block;
-}
+
 nav ul .submenu li {
   position: relative;
 }

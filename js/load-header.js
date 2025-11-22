@@ -36,10 +36,16 @@ window.addEventListener('DOMContentLoaded', ()=>{
       link.href = pathPrefix + 'css/header-component.css';
       document.head.appendChild(link);
 
-      // initialize behavior from site.js if present
-      const s = document.createElement('script');
-      s.src = pathPrefix + 'js/site.js';
-      document.body.appendChild(s);
+
+  // initialize behavior from site.js if present
+  const s = document.createElement('script');
+  s.src = pathPrefix + 'js/site.js';
+  document.body.appendChild(s);
+
+  // also load header.js for dropdown click logic
+  const h = document.createElement('script');
+  h.src = pathPrefix + 'js/header.js';
+  document.body.appendChild(h);
 
       // accessibility: ensure Know Us dialog toggles are wired after site.js loads
     })
